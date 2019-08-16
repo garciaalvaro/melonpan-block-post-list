@@ -1,0 +1,35 @@
+/**
+ * App - Buttons
+ */
+
++prefix-classes('mbpl-')
+
+	.button[disabled]
+		opacity .3
+		pointer-events none
+
+	.button
+	.button-text
+	.button-icon
+		&
+		&:focus
+		&:hover
+			background none
+			box-shadow none
+			outline none
+			border none
+			color inherit
+
+	.button-text
+		font-size 1em
+		line-height 2.7
+		padding 0 10px
+		text-transform uppercase
+		font-weight 500
+		cursor pointer
+
+	.button-icon
+		padding 0
+		display flex
+		align-items center
+		cursor pointer
