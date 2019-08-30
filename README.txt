@@ -1,4 +1,4 @@
-=== Melonpan Block Post List ===
+=== Melonpan Block - Post List ===
 Contributors: melonpan
 Tags: post, posts, cpt, block, block-editor, gutenberg
 Requires at least: 5.2

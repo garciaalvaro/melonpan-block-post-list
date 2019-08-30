@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Melonpan Block Post List
- * Plugin URI: #
+ * Plugin Name: Melonpan Block - Post List
+ * Plugin URI: https://wordpress.org/plugins/melonpan-block-post-list/
  * Description: Block that displays a list of selected Posts and Custom post types
  * Author: melonpan
  * Version: 1.0.0
