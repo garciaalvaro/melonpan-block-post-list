@@ -13,7 +13,7 @@ Block that displays a list of selected Posts and Custom post types.
 
 == Description ==
 
-Block that displays a list of selected Posts and Custom post types. The block doesn't add any styles or scripts in the front-end.
+Block that displays a list of selected Posts and Custom post types. No stylesheets or scripts are added in the front-end.
 
 
 == Usage ==
