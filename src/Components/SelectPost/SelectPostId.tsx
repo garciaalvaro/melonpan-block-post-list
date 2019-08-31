@@ -33,7 +33,7 @@ export const SelectPostId: React.ComponentType<ItemProps> = withSelect<
 }))(props => {
 	const { id, post_id, posts, posts_list, updateList } = props;
 	const [post_options, setPostOptions] = useState<ReactSelectItem[]>([]);
-	const [post_option, setPostOption] = useState<ReactSelectItem | undefined>(
+	const [post_option, setPostOption] = useState<ValueType<ReactSelectItem>>(
 		undefined
 	);
 	const onSelect = (selected: ValueType<ReactSelectItem>) => {
@@ -74,6 +74,16 @@ export const SelectPostId: React.ComponentType<ItemProps> = withSelect<
 		}
 	}, [post_options]);
 
+	// If post_type changed we updated post_id to be 0. We need to update the post_option.
+	useEffect(() => {
+		l(post_id);
+		if (post_id) {
+			return;
+		}
+
+		setPostOption(undefined);
+	}, [post_id]);
+
 	useEffect(() => {
 		if (!posts) {
 			return;
@@ -90,7 +100,8 @@ export const SelectPostId: React.ComponentType<ItemProps> = withSelect<
 			classNamePrefix={plugin_prefix}
 			options={post_options}
 			placeholder={__("Select a Post")}
-			value={post_option}
+			// @ts-ignore
+			value={post_option || ""}
 			onChange={onSelect}
 		/>
 	);

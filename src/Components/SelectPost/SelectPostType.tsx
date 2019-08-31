@@ -35,7 +35,7 @@ export const SelectPostType: React.ComponentType<ItemProps> = withSelect<
 		[]
 	);
 	const [post_type_option, setPostTypeOption] = useState<
-		ReactSelectItem | undefined
+		ValueType<ReactSelectItem>
 	>(undefined);
 	const onSelect = (selected: ValueType<ReactSelectItem>) => {
 		if (!selected) {
@@ -52,6 +52,7 @@ export const SelectPostType: React.ComponentType<ItemProps> = withSelect<
 			if (item) {
 				// @ts-ignore
 				item.post_type = selected.value;
+				item.post_id = 0;
 			}
 		});
 
