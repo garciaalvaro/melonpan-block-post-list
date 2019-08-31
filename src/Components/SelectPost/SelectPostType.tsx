@@ -22,7 +22,7 @@ interface ReactSelectItem {
 
 const { __ } = wp.i18n;
 const { withSelect } = wp.data;
-const { useEffect, useState, useCallback } = wp.element;
+const { useEffect, useState } = wp.element;
 
 export const SelectPostType: React.ComponentType<ItemProps> = withSelect<
 	WithSelectProps,
@@ -37,29 +37,26 @@ export const SelectPostType: React.ComponentType<ItemProps> = withSelect<
 	const [post_type_option, setPostTypeOption] = useState<
 		ReactSelectItem | undefined
 	>(undefined);
-	const onSelect = useCallback(
-		(selected: ValueType<ReactSelectItem>) => {
-			if (!selected) {
-				return;
+	const onSelect = (selected: ValueType<ReactSelectItem>) => {
+		if (!selected) {
+			return;
+		}
+
+		selected = selected as ReactSelectItem;
+
+		setPostTypeOption(selected);
+
+		const posts_list_updated = produce(posts_list, draft => {
+			const item = draft.find(item => item.id === id);
+
+			if (item) {
+				// @ts-ignore
+				item.post_type = selected.value;
 			}
+		});
 
-			selected = selected as ReactSelectItem;
-
-			setPostTypeOption(selected);
-
-			const posts_list_updated = produce(posts_list, draft => {
-				const item = draft.find(item => item.id === id);
-
-				if (item) {
-					// @ts-ignore
-					item.post_type = selected.value;
-				}
-			});
-
-			updateList(posts_list_updated);
-		},
-		[posts_list]
-	);
+		updateList(posts_list_updated);
+	};
 
 	useEffect(() => {
 		if (!post_type_options.length) {

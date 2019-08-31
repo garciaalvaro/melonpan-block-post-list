@@ -6,12 +6,11 @@ import { useToggle } from "utils/hooks";
 
 const { remove } = lodash;
 const { __ } = wp.i18n;
-const { useCallback } = wp.element;
 
 export const ItemButtonRemove: React.ComponentType<ItemProps> = props => {
 	const { id, posts_list, updateList } = props;
 	const { is_open, toggle, close } = useToggle(false);
-	const onClick = useCallback(() => {
+	const onClick = () => {
 		close();
 
 		const posts_list_updated = produce(posts_list, draft => {
@@ -19,7 +18,7 @@ export const ItemButtonRemove: React.ComponentType<ItemProps> = props => {
 		});
 
 		updateList(posts_list_updated);
-	}, []);
+	};
 
 	return (
 		<Popover

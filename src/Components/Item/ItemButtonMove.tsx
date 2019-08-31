@@ -2,18 +2,12 @@ import arrayMove from "array-move";
 
 import { Button, Icon } from "utils/Components";
 
-const { Fragment, useCallback } = wp.element;
+const { Fragment } = wp.element;
 
 export const ItemButtonMove: React.ComponentType<ItemProps> = props => {
 	const { posts_list, updateList, index } = props;
-	const moveUp = useCallback(
-		() => updateList(arrayMove(posts_list, index, index - 1)),
-		[posts_list, index]
-	);
-	const moveDown = useCallback(
-		() => updateList(arrayMove(posts_list, index, index + 1)),
-		[posts_list, index]
-	);
+	const moveUp = () => updateList(arrayMove(posts_list, index, index - 1));
+	const moveDown = () => updateList(arrayMove(posts_list, index, index + 1));
 
 	return (
 		<Fragment>

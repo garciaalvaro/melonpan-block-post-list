@@ -4,12 +4,12 @@ import { Div } from "utils/Components";
 import { Item } from "../Item/Item";
 import { ItemsButtonAdd } from "./ItemsButtonAdd";
 
-const { useState, useEffect, useCallback } = wp.element;
+const { useState, useEffect } = wp.element;
 
 export const Items: React.ComponentType<EditProps> = props => {
 	const { attributes, setAttributes, className } = props;
 	const [posts_list, setPostsList] = useState<Item[]>([]);
-	const updateList = useCallback((posts_list: Item[]) => {
+	const updateList = (posts_list: Item[]) => {
 		setPostsList(posts_list);
 		setAttributes({
 			posts_list: posts_list.map(({ post_type, post_id }) => ({
@@ -17,7 +17,7 @@ export const Items: React.ComponentType<EditProps> = props => {
 				post_id
 			}))
 		});
-	}, []);
+	};
 
 	// We create a parallel array which holds the same values of attributes.posts_list
 	// but with an id assigned to each element. This way we avoid saving the id
