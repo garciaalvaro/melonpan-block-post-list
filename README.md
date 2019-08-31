@@ -1,4 +1,4 @@
-![Banner Image](assets-wp/banner-1544x500.png)
+![Banner Image](assets-repo/banner-1544x500.png)
 
 # Melonpan Block - Post List
 
