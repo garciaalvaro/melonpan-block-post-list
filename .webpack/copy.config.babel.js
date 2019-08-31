@@ -22,6 +22,7 @@ module.exports = [
 						"package.json",
 						"package-lock.json",
 						"pro/**",
+						"README.md",
 						"src/**",
 						"tsconfig.json",
 						"types.d.ts"
