@@ -3,6 +3,8 @@
 	"version": "1.0.0",
 	"description": "Melonpan Block Post List WordPress Plugin",
 	"homepage": "https://wordpress.org/plugins/melonpan-block-post-list/",
+	"author": "Alvaro Garcia",
+	"private": true,
 	"scripts": {
 		"dev": "webpack --mode development --watch --config ./.webpack/build.config.babel.js",
 		"prod": "webpack --mode production --config ./.webpack/build.config.babel.js",
