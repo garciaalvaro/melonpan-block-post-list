@@ -1,10 +1,9 @@
+import { useEffect, useState } from "@wordpress/element";
 import uuid from "uuid/v4";
 
 import { Div } from "utils/Components";
 import { Item } from "../Item/Item";
 import { ItemsButtonAdd } from "./ItemsButtonAdd";
-
-const { useState, useEffect } = wp.element;
 
 export const Items: React.ComponentType<EditProps> = props => {
 	const { attributes, setAttributes, className } = props;

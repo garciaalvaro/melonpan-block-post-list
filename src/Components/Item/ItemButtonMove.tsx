@@ -1,8 +1,7 @@
+import { Fragment } from "@wordpress/element";
 import arrayMove from "array-move";
 
 import { Button, Icon } from "utils/Components";
-
-const { Fragment } = wp.element;
 
 export const ItemButtonMove: React.ComponentType<ItemProps> = props => {
 	const { posts_list, updateList, index } = props;

@@ -1,3 +1,5 @@
+import { registerBlockType } from "@wordpress/blocks";
+
 import { Icon } from "utils/Components";
 import {
 	block_name,
@@ -8,8 +10,6 @@ import {
 import { Items } from "Components/Items/Items";
 
 interface AttributesDefinition extends Record<keyof Attributes, any> {}
-
-const { registerBlockType } = wp.blocks;
 
 registerBlockType<AttributesDefinition>(block_name, {
 	title: block_title,

@@ -1,8 +1,7 @@
+import { __ } from "@wordpress/i18n";
 import uuid from "uuid/v4";
 
 import { Button } from "utils/Components";
-
-const { __ } = wp.i18n;
 
 export const ItemsButtonAdd: React.ComponentType<ItemsProps> = props => {
 	const { posts_list, updateList } = props;

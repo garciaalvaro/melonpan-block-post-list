@@ -1,11 +1,11 @@
+import { remove } from "lodash";
+import { __ } from "@wordpress/i18n";
+
 import Popover, { ArrowContainer } from "react-tiny-popover";
 import produce from "immer";
 
 import { Icon, Button } from "utils/Components";
 import { useToggle } from "utils/hooks";
-
-const { remove } = lodash;
-const { __ } = wp.i18n;
 
 export const ItemButtonRemove: React.ComponentType<ItemProps> = props => {
 	const { id, posts_list, updateList } = props;

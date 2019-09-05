@@ -1,3 +1,6 @@
+import { __ } from "@wordpress/i18n";
+import { useEffect, useState } from "@wordpress/element";
+import { withSelect } from "@wordpress/data";
 import ReactSelect from "react-select";
 import { ValueType } from "react-select/src/types";
 import produce from "immer";
@@ -18,10 +21,6 @@ interface ReactSelectItem {
 	value: number;
 	label: string;
 }
-
-const { __ } = wp.i18n;
-const { withSelect } = wp.data;
-const { useEffect, useState } = wp.element;
 
 export const SelectPostId: React.ComponentType<ItemProps> = withSelect<
 	WithSelectProps,
