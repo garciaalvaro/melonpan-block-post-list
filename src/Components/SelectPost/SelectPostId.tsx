@@ -75,7 +75,6 @@ export const SelectPostId: React.ComponentType<ItemProps> = withSelect<
 
 	// If post_type changed we updated post_id to be 0. We need to update the post_option.
 	useEffect(() => {
-		l(post_id);
 		if (post_id) {
 			return;
 		}
