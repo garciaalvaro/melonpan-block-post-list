@@ -60,6 +60,10 @@ function render_callback( $attributes,$b ) {
 	$classes   = array();
 	$classes[] = 'wp-block-melonpan-block-post-list';
 
+	if ( ! empty( $attributes['className'] ) ) {
+		$classes[] = $attributes['className'];
+	}
+
 	if ( ! empty( $attributes['align'] ) ) {
 		$classes[] = 'align-' . $attributes['align'];
 	}
