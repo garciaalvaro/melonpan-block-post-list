@@ -10,6 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
  *
  * @since 1.0.0
  */
+add_action( 'the_typography_after_customizer_enqueue', __NAMESPACE__ . '\enqueue' );
 add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\enqueue' );
 function enqueue() {
 
