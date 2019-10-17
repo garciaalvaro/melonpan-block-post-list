@@ -27,9 +27,13 @@ function register_block() {
  *
  * @since 1.0.0
  */
-function render_callback( $attributes,$b ) {
+function render_callback( $attributes ) {
 
-	$content = '';
+	$content = apply_filters( 'mbpl_content_to_render', '' );
+
+	if ( ! empty( $content ) ) {
+		return $content;
+	}
 
 	if ( empty( $attributes['posts_list'] ) ) {
 		return $content;
