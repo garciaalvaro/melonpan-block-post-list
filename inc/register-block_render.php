@@ -29,7 +29,7 @@ function register_block() {
  */
 function render_callback( $attributes ) {
 
-	$content = apply_filters( 'mbpl_content_to_render', '' );
+	$content = apply_filters( 'mbpl_content_to_render', '', get_the_ID() );
 
 	if ( ! empty( $content ) ) {
 		return $content;
