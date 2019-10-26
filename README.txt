@@ -13,9 +13,9 @@ Block that displays a list of selected Posts and Custom post types.
 
 == Description ==
 
-Block that displays a list of selected Posts and Custom post types. No stylesheets or scripts are added in the front-end.
+[Documentation](https://melonpan.io/gutenberg-blocks/melonpan-block-post-list) - [GitHub](https://github.com/garciaalvaro/melonpan-block-post-list)
 
-[GitHub repository](https://github.com/garciaalvaro/melonpan-block-post-list)
+Block that displays a list of selected Posts and Custom post types. No stylesheets or scripts are added in the front-end.
 
 
 == Usage ==
