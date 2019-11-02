@@ -29,7 +29,7 @@ function register_block() {
  */
 function render_callback( $attributes ) {
 
-	$content = apply_filters( 'mbpl_content_to_render', '', get_the_ID() );
+	$content = apply_filters( 'mbpl_content_to_render', '', $attributes['posts_list'], $attributes );
 
 	if ( ! empty( $content ) ) {
 		return $content;
@@ -49,7 +49,7 @@ function render_callback( $attributes ) {
 			'publish' !== get_post_status( $post_id ) ||
 			// Post type is no longer available.
 			empty( get_post_type_object( $item['post_type'] ) )
-			) {
+		) {
 			continue;
 		}
 
