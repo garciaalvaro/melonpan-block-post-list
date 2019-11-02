@@ -35,6 +35,11 @@ Installation from the WordPress admin.
 5. That's it, now you can go to any post where Gutenberg is enabled and start using the block.
 
 
+== Screenshots ==
+
+1. Block in the editor
+
+
 == Changelog ==
 
 = 1.0.0 =
