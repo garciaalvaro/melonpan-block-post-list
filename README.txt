@@ -42,5 +42,9 @@ Installation from the WordPress admin.
 
 == Changelog ==
 
+= 1.1.0 =
+* Added mbpl_content_to_render filter to modify the rendered output.
+* Minor bug fixes.
+
 = 1.0.0 =
 * Initial release.
