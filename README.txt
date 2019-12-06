@@ -2,8 +2,8 @@
 Contributors: melonpan
 Tags: post, posts, cpt, block, block-editor, gutenberg
 Requires at least: 5.2
-Tested up to: 5.2
-Stable tag: 1.0.0
+Tested up to: 5.3
+Stable tag: 1.1.0
 Requires PHP: 7.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -41,6 +41,10 @@ Installation from the WordPress admin.
 
 
 == Changelog ==
+
+= 1.1.0 =
+* Added mbpl_content_to_render filter to modify the rendered output.
+* Minor bug fixes.
 
 = 1.0.0 =
 * Initial release.

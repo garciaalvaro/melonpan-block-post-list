@@ -1,20 +1,21 @@
-const { name, version, description, homepage } = require("../package.json");
-const { BannerPlugin, DefinePlugin } = require("webpack");
-const TerserJSPlugin = require("terser-webpack-plugin");
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const nib = require("nib");
+import { name, version, description, homepage } from "../package.json";
+import { BannerPlugin, DefinePlugin } from "webpack";
+import TerserJSPlugin from "terser-webpack-plugin";
+import OptimizeCSSAssetsPlugin from "optimize-css-assets-webpack-plugin";
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import nib from "nib";
+import path from "path";
 
 export default {
-	entry: ["./src/index.ts", "./src/index.styl"],
+	entry: path.join(__dirname, "../src/index.ts"),
 	output: {
-		path: __dirname + "/../build",
+		path: path.join(__dirname, "../build"),
 		filename: `${name}.js`
 	},
 	resolve: {
 		alias: {
-			Components: __dirname + "/../src/Components",
-			utils: __dirname + "/../src/utils"
+			Components: path.join(__dirname, "../src/Components"),
+			utils: path.join(__dirname, "../src/utils")
 		}
 	},
 	externals: {
@@ -45,7 +46,10 @@ export default {
 						loader: "stylus-loader",
 						options: {
 							use: [nib()],
-							import: ["~nib/index.styl"]
+							import: [
+								"~nib/index.styl",
+								path.join(__dirname, "../src/utils/data/stylus_variables.styl")
+							]
 						}
 					}
 				]
