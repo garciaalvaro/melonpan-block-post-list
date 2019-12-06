@@ -2,7 +2,7 @@
 Contributors: melonpan
 Tags: post, posts, cpt, block, block-editor, gutenberg
 Requires at least: 5.2
-Tested up to: 5.2
+Tested up to: 5.3
 Stable tag: 1.0.0
 Requires PHP: 7.1
 License: GPLv3
