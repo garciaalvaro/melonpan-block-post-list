@@ -14,7 +14,7 @@
 		"type": "tsc"
 	},
 	"dependencies": {
-		"array-move": "^2.2.0",
+		"array-move": "^2.2.1",
 		"immer": "^4.0.2",
 		"react-select": "^3.0.8",
 		"react-tiny-popover": "^3.4.5",
