@@ -1,6 +1,7 @@
 import { useEffect, useState } from "@wordpress/element";
 import uuid from "uuid/v4";
 
+import "./Items.styl";
 import { Div } from "utils/Components";
 import { Item } from "../Item/Item";
 import { ItemsButtonAdd } from "./ItemsButtonAdd";

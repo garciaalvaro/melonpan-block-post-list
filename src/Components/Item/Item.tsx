@@ -1,3 +1,4 @@
+import "./Item.styl";
 import { Div } from "utils/Components";
 import { SelectPostType } from "../SelectPost/SelectPostType";
 import { SelectPostId } from "../SelectPost/SelectPostId";

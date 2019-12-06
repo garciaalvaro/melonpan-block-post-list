@@ -7,10 +7,7 @@ import nib from "nib";
 import path from "path";
 
 export default {
-	entry: [
-		path.join(__dirname, "../src/index.ts"),
-		path.join(__dirname, "../src/index.styl")
-	],
+	entry: path.join(__dirname, "../src/index.ts"),
 	output: {
 		path: path.join(__dirname, "../build"),
 		filename: `${name}.js`
