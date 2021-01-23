@@ -42,9 +42,13 @@ Installation from the WordPress admin.
 
 == Changelog ==
 
+= 2.0.0 =
+* Refactored code base
+* Updated dependencies
+
 = 1.1.0 =
-* Added mbpl_content_to_render filter to modify the rendered output.
-* Minor bug fixes.
+* Added mbpl_content_to_render filter to modify the rendered output
+* Minor bug fixes
 
 = 1.0.0 =
-* Initial release.
+* Initial release
