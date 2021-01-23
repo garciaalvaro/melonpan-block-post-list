@@ -4,7 +4,7 @@ import { __ } from "@wordpress/i18n";
 import Popover, { ArrowContainer } from "react-tiny-popover";
 import produce from "immer";
 
-import { Icon, Button } from "utils/Components";
+import { Icon, Button } from "utils/components";
 import { useToggle } from "utils/hooks";
 
 export const ItemButtonRemove: React.ComponentType<ItemProps> = props => {
