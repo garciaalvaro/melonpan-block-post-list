@@ -1,4 +1,4 @@
-_extras/*
-build/*
-node_modules/*
-src/js/prism-languages/*
+_extras
+_release
+dist
+node_modules

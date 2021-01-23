@@ -1,7 +1,7 @@
 import { __ } from "@wordpress/i18n";
 import { select, dispatch } from "@wordpress/data";
 
-import { block_category } from "utils/data";
+import { block_category } from "@/utils/data";
 
 type Category = import("wordpress__blocks/api/categories").Category;
 
@@ -15,7 +15,7 @@ if (categories && !categories.find(({ slug }) => slug === block_category)) {
 		{
 			slug: block_category,
 			title: __("Melonpan Blocks"),
-			icon: null
-		}
+			icon: null,
+		},
 	]);
 }

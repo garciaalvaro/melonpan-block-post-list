@@ -1,0 +1,37 @@
+/**
+ * Button
+ */
+
+.button
+
+	&
+	&:focus
+	&:hover
+		background none
+		box-shadow none
+		outline none
+		border none
+		color inherit
+		font-size inherit
+		cursor pointer
+
+	&[disabled]
+		opacity .3
+		pointer-events none
+
+.text
+	line-height 2.5
+	padding 0 10px
+	text-transform uppercase
+	font-weight 500
+
+	&
+	&:focus
+	&:hover
+		font-size .95em
+
+.icon
+	padding 5px
+	line-height 0
+	display flex
+	align-items center
