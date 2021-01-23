@@ -4,7 +4,7 @@
  * Plugin URI: https://wordpress.org/plugins/melonpan-block-post-list/
  * Description: Block that displays a list of selected Posts and Custom post types
  * Author: melonpan
- * Version: 1.1.0
+ * Version: 2.0.0
  * License: GPL3+
  * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
  */
@@ -17,7 +17,7 @@ if (!defined("ABSPATH")) {
 }
 
 define(__NAMESPACE__ . "\PLUGIN_NAME", "melonpan-block-post-list");
-define(__NAMESPACE__ . "\PLUGIN_VERSION", "1.1.0");
+define(__NAMESPACE__ . "\PLUGIN_VERSION", "2.0.0");
 define(__NAMESPACE__ . "\DIST_DIR", plugins_url("dist/", __FILE__));
 define(__NAMESPACE__ . "\INC_DIR", plugin_dir_path(__FILE__) . "inc/");
 
