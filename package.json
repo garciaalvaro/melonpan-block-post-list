@@ -48,7 +48,6 @@
 		"react-dom": "^16.14.0",
 		"react-select": "^4.0.2",
 		"react-tiny-popover": "^6.0.4",
-		"react-window": "^1.8.6",
 		"replace-in-file": "^6.1.0",
 		"stylus": "^0.54.8",
 		"stylus-loader": "^4.3.3",
