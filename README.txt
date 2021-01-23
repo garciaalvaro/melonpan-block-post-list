@@ -1,8 +1,8 @@
 === Melonpan Block - Post List ===
 Contributors: melonpan
 Tags: post, posts, cpt, block, block-editor, gutenberg
-Requires at least: 5.2
-Tested up to: 5.3
+Requires at least: 5.6
+Tested up to: 5.6
 Stable tag: 1.1.0
 Requires PHP: 7.1
 License: GPLv3
