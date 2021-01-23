@@ -1,6 +1,6 @@
 import { Fragment } from "@wordpress/element";
 
-import { Icons, icons } from "utils/data/icons";
+import { Icons, icons } from "@/utils/data/icons";
 
 interface Props {
 	icon: keyof Icons;

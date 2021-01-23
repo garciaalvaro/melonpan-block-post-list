@@ -5,8 +5,8 @@ import ReactSelect from "react-select";
 import { ValueType } from "react-select/src/types";
 import produce from "immer";
 
-import { plugin_prefix } from "utils/data";
-import { addPrefix } from "utils/tools";
+import { plugin_prefix } from "@/utils/data";
+import { addPrefix } from "@/utils/tools";
 
 interface Post {
 	id: number;

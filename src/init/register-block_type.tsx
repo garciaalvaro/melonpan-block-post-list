@@ -1,13 +1,13 @@
 import { registerBlockType } from "@wordpress/blocks";
 
-import { Icon } from "utils/components";
+import { Icon } from "@/utils/components";
 import {
 	block_name,
 	block_title,
 	block_description,
 	block_category
-} from "utils/data";
-import { Items } from "components/Items/Items";
+} from "@/utils/data";
+import { Items } from "@/components/Items/Items";
 
 interface AttributesDefinition extends Record<keyof Attributes, any> {}
 

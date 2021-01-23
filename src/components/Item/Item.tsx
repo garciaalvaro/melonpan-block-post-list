@@ -1,5 +1,5 @@
 import "./Item.styl";
-import { Div } from "utils/components";
+import { Div } from "@/utils/components";
 import { SelectPostType } from "../SelectPost/SelectPostType";
 import { SelectPostId } from "../SelectPost/SelectPostId";
 import { ItemButtonRemove } from "./ItemButtonRemove";
