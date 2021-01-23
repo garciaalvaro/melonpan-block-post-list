@@ -1,21 +1,30 @@
-import "./Item.styl";
-import { Div } from "@/utils/components";
-import { SelectPostType } from "../SelectPost/SelectPostType";
-import { SelectPostId } from "../SelectPost/SelectPostId";
-import { ItemButtonRemove } from "./ItemButtonRemove";
-import { ItemButtonMove } from "./ItemButtonMove";
+import React, { FunctionComponent } from "react";
 
-export const Item: React.ComponentType<ItemProps> = props => {
-	const { post_type } = props;
+import styles from "./Item.styl";
+import { SelectPostId } from "../SelectPostId";
+import { SelectPostType } from "../SelectPostType";
+import { ButtonRemove } from "../ButtonRemove";
+import { ButtonMove } from "../ButtonMove";
+
+interface Props extends Item {
+	index: number;
+}
+
+export const Item: FunctionComponent<Props> = props => {
+	const { id, post_id, post_type, index } = props;
 
 	return (
-		<Div className="item">
-			<Div className="item-buttons">
-				<ItemButtonMove {...props} />
-				<ItemButtonRemove {...props} />
-			</Div>
-			<SelectPostType {...props} />
-			{post_type && <SelectPostId {...props} />}
-		</Div>
+		<div className={styles.container}>
+			<div className={styles.buttons}>
+				<ButtonMove index={index} />
+				<ButtonRemove id={id} />
+			</div>
+
+			<SelectPostType id={id} post_id={post_id} post_type={post_type} />
+
+			{post_type && (
+				<SelectPostId id={id} post_id={post_id} post_type={post_type} />
+			)}
+		</div>
 	);
 };

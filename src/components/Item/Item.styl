@@ -1,41 +1,21 @@
 /**
- * App
+ * Item
  */
 
-+prefix-classes('mbpl-')
+.container
+	padding 10px 40px 40px
+	background-color rgba(0,0,0,.05)
+	border-bottom 1px dashed rgba(0,0,0,.2)
+	transition background-color .1s .1s $e_standard
 
-	.item
-		padding 10px 40px 40px
-		background-color rgba(0,0,0,.05)
-		border-bottom 2px solid #fff
-		transition background-color .2s .1s $e_standard
+	&:hover
+		background-color rgba(0,0,0,.07)
 
-		&:hover
-			background-color rgba(0,0,0,.07)
+	&:last-child
+		border-bottom none
 
-		&:last-child
-			border-bottom none
-
-	.item-buttons
-		display flex
-		justify-content flex-end
-		align-items center
-		margin-bottom 15px
-
-		.button
-			padding 5px
-
-			&:last-child
-				margin-right -5px
-
-	body button.button-remove
-		&
-		&:hover
-		&:focus
-			background-color #23282c
-			border 1px solid rgba(255,255,255,0.2)
-			color rgba(255,255,255,0.8)
-			padding .7em 1em
-
-	.control-react_select + .control-react_select
-		padding-top 15px
+.buttons
+	display flex
+	justify-content flex-end
+	align-items center
+	margin-bottom 15px

@@ -1,0 +1,1 @@
+export { SelectPostType } from "./SelectPostType";

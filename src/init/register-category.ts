@@ -15,7 +15,7 @@ if (categories && !categories.find(({ slug }) => slug === block_category)) {
 		{
 			slug: block_category,
 			title: __("Melonpan Blocks"),
-			icon: null
-		}
+			icon: null,
+		},
 	]);
 }
