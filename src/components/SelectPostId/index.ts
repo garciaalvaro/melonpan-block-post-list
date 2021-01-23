@@ -1,0 +1,1 @@
+export { SelectPostId } from "./SelectPostId";
