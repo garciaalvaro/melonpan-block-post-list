@@ -19,7 +19,7 @@ interface ContextProps {
 interface EditProps {
 	className: string;
 	attributes: Attributes;
-	setAttributes: (attributes: Attributes) => void;
+	setAttributes: (attributes: Partial<Attributes>) => void;
 }
 
 // CSS modules
