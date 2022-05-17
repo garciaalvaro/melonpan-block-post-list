@@ -19,7 +19,7 @@ export const ButtonRemove: FunctionComponent<Props> = props => {
 	const remove = () => {
 		close();
 
-		const posts_list_updated = posts_list.filter(item => item.id === id);
+		const posts_list_updated = posts_list.filter(item => item.id !== id);
 
 		updatePostsList(posts_list_updated);
 	};
